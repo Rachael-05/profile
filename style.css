@@ -7,7 +7,7 @@
 */
 body.light-mode {
   background-color: #fff;
-  color: #000;
+  color: #333;
 }
 
 /*
@@ -174,7 +174,30 @@ h2 {
 /*ABOUT SECTION*/
 
 .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space between;
+  align-items: center;
   height: 500px;
+  margin-left: 3%;
+  line-height: 200%;
+}
+
+.traits {
+  grid-column: 1/3;
+  max-height: 485px;
+}
+
+h1 {
+  padding-bottom: 20px;
+}
+
+.portrait {
+  grid-column: 3/4;
+  border: 3px double gold;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
 }
 
 /*WORK*/
