@@ -252,6 +252,8 @@ text-decoration:none;
   min-height: 100vh;
   padding:50px;
   text-align:center;
+
+  border-bottom:2px dashed gold;
 }
 .container{
   max-width: 800px;
@@ -330,5 +332,16 @@ button:hover{
 }
 
 /*FOOTER*/
+
+footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background-color:gold;
+  height:50px;
+  color:#000;
+  border-bottom:2px dashed #410042;
+ }
 
 /*Stock Images from pexels.com */

@@ -4,11 +4,15 @@ var character = document.getElementById("character");
 var jumping = 0;
 var counter = 0;
 
+
 hole.addEventListener('animationiteration', () => {
     var random = -((Math.random()*300)+150);
     hole.style.top = random + "px";
     counter++;
 });
+
+/*gravity*/
+
 setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     if(jumping==0){
@@ -23,6 +27,8 @@ setInterval(function(){
         counter=0;
     }
 },10);
+
+/*jump function*/
 
 function jump(){
     jumping = 2;
@@ -40,6 +46,9 @@ function jump(){
         jumpCount++;
     },10);
 }
+
+/*smooth clicks*/
+
 document.body.addEventListener("click", (event) => {
   if (event.target.matches(".clickable")) {
     console.log("A clickable element was clicked!");
